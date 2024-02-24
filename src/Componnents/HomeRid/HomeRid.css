@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgba(7, 104, 159, 1);
+    --main-btn-color: rgba(250, 250, 250, 0.95);
+    --main-transition: all .6s linear;
+}
+
+.mHome {
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 100px 100px 1000px 300px var(--main-color) , 10px 10px 10px 100px var(--main-color);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(50%);
+
+}
+
+.introtitle img {
+    width: 50%;
+  
+}
+
+.introtitle .btn {
+    background-color: var(--main-btn-color);
+    transition: var(--main-transition);
+    margin: 10% 0;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.introtitle .btn:hover {
+    border: 1px solid var(--main-btn-color);
+    color: var(--main-colorr) !important;
+    letter-spacing: 1.9px;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px 2px var(--main-btn-color);
+}
+
+.imgIntro img {
+    width: 70%;
+    height: 70%;
+}

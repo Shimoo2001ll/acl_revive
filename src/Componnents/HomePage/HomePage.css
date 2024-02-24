@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-transition:1s all linear;
+}
+/*  global style */
+.main{
+    background-image: url(../../asset/Group.svg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.orole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+    margin: 5%;
+    transition: var(--main-transition);
+}
+.orole img{
+width: 90%;
+height: 100%;
+margin: 5%;
+
+}
+.orole:hover {
+border: 1px solid red !important;
+cursor: pointer;
+
+}
