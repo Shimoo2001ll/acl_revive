@@ -11,6 +11,8 @@ import LayOut from './Componnents/LayOut/LayOut';
 import HomeRid from './Componnents/HomeRid/HomeRid';
 import Scan from './Componnents/Scan/Scan';
 import ForgetPass from './Componnents/ForgetPass/ForgetPass';
+import Verify from './Componnents/ForgetPass/Verify';
+import Newpass from './Componnents/ForgetPass/Newpass';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "forget",
     element: <ForgetPass />,
+  },
+  {
+    path: "varify",
+    element: <Verify />,
+  },
+  {
+    path: "newpass",
+    element: <Newpass />,
   },
   {
     path: "signup",

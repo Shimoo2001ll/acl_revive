@@ -8,7 +8,7 @@ ul{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid gray;
+  
 
 }
 
@@ -52,10 +52,10 @@ small{
     display: none;
 }
 .Mscan label{
-    padding: 10px;
+    padding: 16% !important;
     height: 100%;
     width: 100%;
-    border: 1px solid blue;
+    border: 1px dashed blue;
     border-radius: 6px;
     cursor: pointer;
     background-color: #fafafa;
@@ -64,5 +64,8 @@ small{
 }
 label:hover{
   
-    border: 1px dashed #de0611 ;
+    border-width: 3px  ;
+}
+.upload{
+    color: var(--main-color);
 }

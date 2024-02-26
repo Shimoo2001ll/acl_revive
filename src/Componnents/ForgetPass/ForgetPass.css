@@ -1,0 +1,28 @@
+
+:root {
+    --main-color: rgba(7, 104, 159, 1);
+    --main-btn-color: rgba(250, 250, 250, 0.95);
+    --main-transition: all .3s linear;
+}
+.forget,
+.verify{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.image{
+
+    padding: 3%;
+    border-right: 1px solid gray;
+}
+.email,.message{
+    transition: var(--main-transition);
+}
+.email:hover,
+.message:hover{
+    border-color: var(--main-color) !important;
+    border-width: 2px !important;
+    cursor: pointer;
+}
