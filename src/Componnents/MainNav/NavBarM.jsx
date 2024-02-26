@@ -11,11 +11,11 @@ function NavBarM  () {
           <div className='col-6'>
             <img src={Logo} alt="" />
           </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <div className="navbar-nav col-10 justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav col-10 justify-content-end">
               <li className="nav-item"> 
                 <Link  className='nav-link text-light' to="HomeRid">Home</Link>
               </li>
@@ -34,7 +34,7 @@ function NavBarM  () {
               <li className="nav-item">
          
               </li>
-            </div>
+            </ul>
           </div>
         </div>
       </nav>
