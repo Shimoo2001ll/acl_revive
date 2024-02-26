@@ -7,7 +7,7 @@ import profile from '../../asset/prof.svg'
 function NavBarM  () {
   return (
     <>
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-md ">
         <div className="container-fluid">
           <div className='col-6'>
             <img src={Logo} alt="" />
