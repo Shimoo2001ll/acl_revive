@@ -1,47 +1,36 @@
 import React from 'react';
+import './NavBarM.css'
 import { Link } from 'react-router-dom';
 import Logo from '../../asset/whitelogo.svg'
-import'./NavBarM.css'
-import profile from '../../asset/prof.svg'
+import profile from '../../asset/prof.svg';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-function NavBarM  () {
+function BasicExample() {
   return (
-    <>
-      <nav className="navbar navbar-expand-md ">
-        <div className="container-fluid">
-          <div className='col-6'>
-            <img src={Logo} alt="" />
-          </div>
-          <button className="navbar-toggler collapsed "  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <div className="navbar-nav col-10 justify-content-end">
-              <li className="nav-item"> 
-                <Link  className='nav-link text-light' to="HomeRid">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className='nav-link text-light' to="scan">Scan</Link>
-              </li>
-              <li className="nav-item">
-                <Link className='nav-link text-light' to="Report">Report</Link>
-              </li>
-              <li className="nav-item">
-                <Link className='nav-link text-light' to="Patiant">Patiant</Link>
-              </li>
-              <li className="nav-item">
-                <Link className='nav-link text-light' to="Services">Services</Link>
-              </li>
-              <li className="nav-item">
-                <Link className='nav-link text-light' to="profile"><img src={profile} alt="" /></Link>
+    <Navbar expand="lg" className="">
+      <Container>
+        <Navbar.Brand href="#home"> <div className='col-6'>
+          <img src={Logo} alt="" />
+        </div></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Link className='nav-link text-light' to="/HomeRid">Home</Link>
+            <Link className='nav-link text-light' to="/scan">Scan</Link>
+            <Link className='nav-link text-light' to="/Report">Report</Link>
+            <Link className='nav-link text-light' to="/Patiant">Patiant</Link>
+            <Link className='nav-link text-light' to="/Services">Services</Link>
+            <Link className='nav-link text-light w-25 ' to="/profile"><img src={profile} alt="" /></Link>
+          </Nav>
          
-              </li>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </>
-  )
-}
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-export default NavBarM
+export default BasicExample;
+
+
