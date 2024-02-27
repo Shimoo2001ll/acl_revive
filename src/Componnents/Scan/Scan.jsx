@@ -7,14 +7,14 @@ import {FaArrowAltCircleDown} from 'react-icons/fa'
 
 const Scan = () => {
   return (
-  <div className='Mscan row w-100 text-center  '>
-    <div className='Slice col-5'>
+  <div className='Mscan  w-100 text-center  '>
+    <div className='Slice '>
 <div className='list d-flex  justify-content-center  align-items-center '>
-<ul>
-  <li className='d-flex  justify-content-center  align-items-center'>1</li>
-  <li className='d-flex  justify-content-center  align-items-center'>2</li>
-  <li className='d-flex  justify-content-center  align-items-center'>3</li>
-</ul>
+
+  <span className='d-flex  justify-content-center  align-items-center'>1</span>
+  <span className='d-flex  justify-content-center  align-items-center'>2</span>
+  <span className='d-flex  justify-content-center  align-items-center'>3</span>
+
 </div>
 <div className='mri'>
 <img src={mri} alt="" srcset="" />
@@ -29,7 +29,7 @@ const Scan = () => {
 <small className='text-muted fw-bold'>More <span > <FaArrowAltCircleDown/> </span></small>
 </div>
     </div>
-<div className='Uplod col-6'>
+<div className='Uplod '>
   <div className='d-flex justify-content-start mb-2  '>
 <h3 className='p-4'>
   Upload Photo

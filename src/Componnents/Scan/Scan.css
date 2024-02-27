@@ -2,28 +2,23 @@
     --main-transition: all .5s linear;
     --main-color: rgba(7, 104, 159, 1);
  }
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
 
-}
 
-ul li{
+.list{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    width: 30px;
-    height: 30px;
-   
-   
-   
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
 }
-ul li:hover{
+.list span{
+    margin: 5px 10px;
+    width: 50px;
+    height: 50px;
+}
+.list span:hover{
     cursor: pointer;
     border: 1px solid var(--main-color);
    border-radius: 50%;
@@ -35,6 +30,7 @@ ul li:hover{
 .Slice{
     
     border-right: 2px solid gray;
+    padding-right: 10%;
     
 }
 small{
@@ -47,6 +43,8 @@ small{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    
 }
 .Mscan input[type ="file"]{
     display: none;
