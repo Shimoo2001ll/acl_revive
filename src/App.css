@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgba(7, 104, 159, 1);
+    --main-btn-color: rgba(250, 250, 250, 0.95);
+    --main-transition: all .6s linear;
+}
+

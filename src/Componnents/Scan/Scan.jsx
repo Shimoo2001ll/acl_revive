@@ -7,8 +7,8 @@ import Sclice from './Sclice'
 const Scan = () => {
   return (
   <div className='Mscan  w-100 text-center  '>
-    <Sclice className="" />
-     <div className='Uplod  '>
+    <Sclice />
+     <div className='Uplod'>
   <div className='d-flex justify-content-start mb-2  '>
 <h3 className='p-4'>
   Upload Photo

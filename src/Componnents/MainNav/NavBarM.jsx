@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="">
+    <Navbar expand="lg" className="bg-transparent  ">
       <Container>
         <Navbar.Brand href="#home"> <div className='col-6'>
           <img src={Logo} alt="" />
@@ -17,12 +17,12 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link className='nav-link text-light' to="/HomeRid">Home</Link>
-            <Link className='nav-link text-light' to="/scan">Scan</Link>
-            <Link className='nav-link text-light' to="/Report">Report</Link>
-            <Link className='nav-link text-light' to="/Patiant">Patiant</Link>
-            <Link className='nav-link text-light' to="/Services">Services</Link>
-            <Link className='nav-link text-light w-25 ' to="/profile"><img src={profile} alt="" /></Link>
+            <Link className='nav-link text-dark' to="/HomeRid">Home</Link>
+            <Link className='nav-link text-dark' to="/scan">Scan</Link>
+            <Link className='nav-link text-dark' to="/Report">Report</Link>
+            <Link className='nav-link text-dark' to="/Patiant">Patiant</Link>
+            <Link className='nav-link text-dark' to="/Services">Services</Link>
+            <Link className='nav-link  w-25 ' to="/profile"><img src={profile} alt="profile" title="profile" /></Link>
           </Nav>
          
         </Navbar.Collapse>
