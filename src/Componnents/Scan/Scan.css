@@ -13,12 +13,12 @@
     border-bottom: 1px solid gray;
     margin-bottom: 10px;
 }
-.list span{
+.list .num{
     margin: 5px 10px;
     width: 50px;
     height: 50px;
 }
-.list span:hover{
+.list .num:hover{
     cursor: pointer;
     border: 1px solid var(--main-color);
    border-radius: 50%;
@@ -42,7 +42,6 @@ small{
 .Mscan{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
     
 }
@@ -64,6 +63,7 @@ label:hover{
   
     border-width: 3px  ;
 }
+
 .upload{
     color: var(--main-color);
 }
