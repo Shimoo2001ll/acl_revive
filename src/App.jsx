@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import Login from './Componnents/Login/Login'
-import Signup from './Componnents/Signup/Signup'
 import LayOut from './Componnents/LayOut/LayOut';
 import HomeRid from './Componnents/HomeRid/HomeRid';
 import Scan from './Componnents/Scan/Scan';
@@ -17,6 +16,9 @@ import Verify from './Componnents/ForgetPass/Verify';
 import Newpass from './Componnents/ForgetPass/Newpass';
 import Upload2 from './Componnents/Scan/Upload2';
 import Upload3 from './Componnents/Scan/Upload3';
+import  Profile  from './Componnents/Profile/Profile';
+import  Service  from './Componnents/Service/Service';
+import  Patiant  from './Componnents/Patiant/Patiant';
 
 const router = createBrowserRouter([
   {
@@ -38,10 +40,6 @@ const router = createBrowserRouter([
   {
     path: "newpass",
     element: <Newpass />,
-  },
-  {
-    path: "signup",
-    element: <Signup />,
   },
   {
     path: "/",
@@ -66,6 +64,18 @@ const router = createBrowserRouter([
       {
         path : "report",
         element: <Report />,
+      },
+      {
+        path : "patiant",
+        element: <Patiant />,
+      },
+      {
+        path : "services",
+        element: <Service />,
+      },
+      {
+        path : "profile",
+        element: <Profile />,
       },
     ],
   },
