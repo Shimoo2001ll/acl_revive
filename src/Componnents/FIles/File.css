@@ -13,6 +13,7 @@ input::placeholder {
 
 .reports span {
     color: var(--main-span-color);
+  font-size: small;
 
 }
 

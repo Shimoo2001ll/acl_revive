@@ -31,6 +31,8 @@
     
     border-right: 2px solid gray;
     padding-right: 10%;
+    position: relative;
+    /* overflow: hidden; */
     
 }
 small{
@@ -66,4 +68,18 @@ label:hover{
 
 .upload{
     color: var(--main-color);
+}
+
+@media screen and (max-width:900px) {
+    
+    .mri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin: 0 10px;
+    }
+    .mri img{
+        width: 100%;
+    
+    }
 }

@@ -7,8 +7,42 @@ import BUtton from '../Button/Buutton'
 import './Report.css'
 
 const Report = () => {
+
+    const myFiles = [
+        {
+            icon: <FaGoogleDrive/>,
+            name: "Jone",
+            mail: "jone233@gmail.com"
+        },
+        {
+            icon: <FaGoogleDrive/>,
+            name: "Soo",
+            mail: "sd@gmail.com"
+        },
+        {
+            icon: <FaGoogleDrive/>,
+            name: "sjs",
+            mail: "lkllkl@gmail.com"
+        },
+        {
+            icon: <FaGoogleDrive/>,
+            name: "Jone",
+            mail: "jone233@gmail.com"
+        },
+        {
+            icon: <FaGoogleDrive/>,
+            name: "Soo",
+            mail: "sd@gmail.com"
+        },
+        {
+            icon: <FaGoogleDrive/>,
+            name: "sjs",
+            mail: "lkllkl@gmail.com"
+        },
+    ]
+
     return (
-        <div className='m-2 p-2  '>
+        <div className='   '>
             <div className='container'>
                 <div>
                     <form action="">
@@ -22,18 +56,15 @@ const Report = () => {
                     </form>
                 </div>
                 <div className='reports m-4  '>
-         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com" bttn={ <div><BUtton name="Open"/></div>}/>
-         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
-         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+                    {
+                        myFiles.map((file, index) => {
+                            return (
+                                //  Every elemet have an unique key
+                                <File key={index} awsom={file.icon} name={file.name} mail={file.mail} bttn={ <div><BUtton name="Open"/></div>}/>
+                            )
+                        })
+                    }
+  
    
                 </div> 
                 </div>

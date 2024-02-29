@@ -19,6 +19,7 @@ import Upload3 from './Componnents/Scan/Upload3';
 import  Profile  from './Componnents/Profile/Profile';
 import  Service  from './Componnents/Service/Service';
 import  Patiant  from './Componnents/Patiant/Patiant';
+import Review from './Componnents/ReviewPatiant/Review';
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path : "patiant",
         element: <Patiant />,
+      },
+      {
+        path : "review",
+        element: <Review />,
       },
       {
         path : "services",

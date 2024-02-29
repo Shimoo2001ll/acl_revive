@@ -1,0 +1,11 @@
+.btn {
+    box-shadow: inset 10px 10px 35px 10px var(--main-color);
+    color: white !important;
+    padding: 5px 20px !important;
+    
+
+ }
+.btn:hover {
+    box-shadow: inset 20px 20px 40px 20px var(--main-color);
+    color: white !important;
+ }
