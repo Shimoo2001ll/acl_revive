@@ -1,6 +1,9 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { FaGoogleDrive } from 'react-icons/fa';
+import File from '../FIles/File'
+import { FaGoogleDrive } from 'react-icons/fa'
+import BUtton from '../Button/Buutton'
+
 import './Report.css'
 
 const Report = () => {
@@ -19,210 +22,19 @@ const Report = () => {
                     </form>
                 </div>
                 <div className='reports m-4  '>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='d-flex  w-100 mb-4 p-2 shadow  rounded '>
-                        <div className=' drive p-2 m-2'><FaGoogleDrive /></div>
-                        <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
-                                <p className='fw-bold'>Jone</p>
-                                <span >hhhh@gmail.com</span>
-                            </div>
-                            <div>
-                                <button className='btn btn-info '>Open</button>
-                            </div>
-                        </div>
-                    </div>
+         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com" bttn={ <div><BUtton name="Open"/></div>}/>
+         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="Jone" mail="jone233@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="Soo" mail="sd@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+         <File awsom={<FaGoogleDrive/>} name="sjs" mail="lkl@gmail.com"  bttn={ <div><BUtton name="Open"/></div>} />
+   
                 </div> 
                 </div>
 

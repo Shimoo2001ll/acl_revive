@@ -7,23 +7,25 @@ import {Link} from 'react-router-dom'
 const Sclice = () => {
   return (
     <>
-    <div className='Slice d-none d-md-block d-lg-block  d-xl-block  '>
+    <div className='Slice  '>
     <div className='list d-flex  justify-content-center  align-items-center '>
       <Link to="/Scan" className='num text-dark text-decoration-none  d-flex  justify-content-center  align-items-center'>1</Link>
       <Link to="/upload2" className='num text-dark text-decoration-none d-flex  justify-content-center  align-items-center'>2</Link>
       <Link to="/upload3" className='num text-dark text-decoration-none d-flex  justify-content-center  align-items-center'>3</Link>
     </div>
-    <div className='mri'>
+    <div className='  '>  
+    <div className='    '>
     <img src={mri} alt="" srcset="" />
     </div>
-    <div className='mri'>
+    <div className=''>
     <img src={mri} alt="" srcset="" />
     </div>
-    <div className='mri'>
+    <div className=''>
     <img src={mri} alt="" srcset="" />
     </div>
     <div>
     <small className='text-muted fw-bold'>More <span > <FaArrowAltCircleDown/> </span></small>
+    </div>
     </div>
         </div></>
   )
