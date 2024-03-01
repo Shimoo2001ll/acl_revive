@@ -1,6 +1,7 @@
 import React from 'react'
 import InputP from '../InputP/InputP'
 import  BUtton  from '../Button/Buutton'
+import TitleServ from '../TitleServ/Title'
 
 const Review = () => {
   return (
@@ -9,7 +10,7 @@ const Review = () => {
         <div className=' d-flex flex-wrap justify-content-evenly    align-items-center   '>
         <div className='Doctor m-2 me-5'>
         <div className='m-2 mb-5 pb-5 p-3'>
-            <h2>Review information</h2>
+            <TitleServ title="Review information " />
         </div>
             <h4>Doctor's Card</h4>
 <InputP type="text" placeholder="Name" />

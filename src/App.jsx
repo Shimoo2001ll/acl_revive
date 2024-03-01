@@ -20,6 +20,7 @@ import  Profile  from './Componnents/Profile/Profile';
 import  Service  from './Componnents/Service/Service';
 import  Patiant  from './Componnents/Patiant/Patiant';
 import Review from './Componnents/ReviewPatiant/Review';
+import Add from './Componnents/AddConnection/Add';
 
 const router = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ const router = createBrowserRouter([
       {
         path : "services",
         element: <Service />,
+      },
+      {
+        path : "add",
+        element: <Add />,
       },
       {
         path : "profile",
