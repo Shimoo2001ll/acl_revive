@@ -1,7 +1,7 @@
 :root {
     --main-color: rgba(7, 104, 159, .7);
     --main-span-color: rgba(51, 51, 51, 0.32);
-    --main-transition: all .3s ease;
+    --main-transition: all 1s linear;
 }
 
 input::placeholder {
@@ -13,23 +13,21 @@ input::placeholder {
 
 .reports span {
     color: var(--main-span-color);
-  font-size: small;
+    font-size: small;
+   
 
 }
 
 .drive {
     font-size: 2em;
     color: var(--main-color);
+   
 }
 
-.rep {
-    transition: var(--main-transition);
-}
-
+.rep:hover,
 .rep:hover .iconS,
-.rep :hover span,
-.rep:hover {
+.rep :hover span {
+    cursor: pointer;
     background-color: var(--main-color);
     color: white !important;
-    cursor: pointer;
 }

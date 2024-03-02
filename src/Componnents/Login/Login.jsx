@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../../asset/logo.svg'
 import facebook from '../../asset/facebook.svg'
 import google from '../../asset/google.svg'
@@ -9,6 +9,16 @@ import{FaLock} from 'react-icons/fa'
 
 
 function Login() {
+    const [email , setEmail ] = useState('')
+    const [pass , setPass ] = useState('')
+    const [error , setErorr ] = useState('')
+    const checkInputs = (e)=>{
+        if(email==="" || pass ===""){
+    e.preventDefault();
+    setErorr(<p className=' alert  alert-danger  text-capitalize '> Please fill in all the fielde </p>)
+    return;
+}
+    }
     return (
         <div className=' log  w-75 mt-2 pt-5 '>
             <div className='m-5 text-center'>
@@ -20,19 +30,20 @@ function Login() {
                         <label className="form-label fw-bold">Email : </label>
                         <div className='inp border border-muted row p-2 rounded'>
                             <FaRegEnvelope className='awenvelop col-2 p-0 m-0 '/>
-                            <input type='email' placeholder='example@gmail.com' className=' col-10 m-0 p-0' required />
+                            <input type='email' placeholder='example@gmail.com' className=' col-10 m-0 p-0' value={email} onChange={e=> setEmail(e.target.value)} />
                         </div>
                     </div>
                     <div className="mb-3">
-
                         <label for="exampleInputPassword1" class="form-label fw-bold ">Password:</label>
                         <div className='inp border border-muted row p-2 rounded'>
                             <FaLock className='awenvelop col-2 p-0 m-0 '/>
-                            <input type="password" placeholder='****************' className=' col-10 m-0 p-0' required />
+                            <input type="password" placeholder='****************' className=' col-10 m-0 p-0' value={pass} onChange={e=> setPass(e.target.value)} />
                         </div>
                     </div>
                     <div>
-                        <Link to="/HomeRid" className="btn  w-100 text-center">Log in</Link>
+                        {error && error}
+                        <Link to='/HomeRid' onClick={checkInputs}  className="btn  w-100 text-center text-capitalize "
+                        > log in</Link>
                     </div>
                 </form>
             </div>

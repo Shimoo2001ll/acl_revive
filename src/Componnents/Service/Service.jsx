@@ -3,12 +3,12 @@ import InputP from '../InputP/InputP'
 import TitleServ from '../TitleServ/Title'
 import BUtton from '../Button/Buutton'
 import { Link } from 'react-router-dom';
+import'./Service.css'
 
 const Service = () => {
   return (
-    <div>
+    <div className='mainServ'>
       <div className='container'>
-
         <div className=' d-flex flex-wrap justify-content-evenly    align-items-center   '>
           <div className='Doctor m-2 me-5'>
             <div className='m-2 mb-5 pb-5 p-3'>
@@ -26,7 +26,7 @@ const Service = () => {
 
             <InputP type="text" placeholder="Name" />
             <InputP type="email" placeholder="Email" />
-            <InputP type="number" placeholder="Phone" />
+            <InputP type="number"  placeholder="Phone" />
             <InputP type="number" placeholder="Age" />
             <InputP type="text" placeholder="Result of scan" />
             <InputP type="file" placeholder="upload Mri Scan" />

@@ -12,7 +12,10 @@ function BasicExample() {
     <Navbar expand="lg" className="bg-transparent  ">
       <Container>
         <Navbar.Brand href="#home"> <div className='col-6'>
+          <Link to='/HomeRid' className=' text-decoration-none '>
+          
           <img src={Logo} alt="" />
+          </Link>
         </div></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

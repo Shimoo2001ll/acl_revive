@@ -1,6 +1,8 @@
 import React from 'react'
 
 const InputP = (props) => {
+
+
   return (
     <div>
         <div className="input-group mb-3 w-100 ">

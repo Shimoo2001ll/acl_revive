@@ -15,13 +15,13 @@ const Sclice = () => {
     </div>
     <div className='mri'>
     <div className=''>
-    <img src={mri} alt="" srcset="" />
+    <img src={mri} alt=""/>
     </div>
     <div className=''>
-    <img src={mri} alt="" srcset="" />
+    <img src={mri} alt="" />
     </div>
     <div className=''>
-    <img src={mri} alt="" srcset="" />
+    <img src={mri} alt=""  />
     </div>
     </div>
     <div>
