@@ -1,0 +1,19 @@
+.bg{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 80vw;
+
+}
+
+.bg img{
+    width: 95vw;
+    height: 100vh;
+
+}
+@media screen and (max-width:1000px) {
+   
+    .bg img{
+        display: none;
+    }
+}

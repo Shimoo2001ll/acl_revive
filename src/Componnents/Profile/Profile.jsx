@@ -51,6 +51,8 @@ const Profile = () => {
             <Form.Control
               type="number"
               id="num"
+              min="0"
+              maxLength="14"
             />
         </div>
         <div className='fw-bold mt-4'><Form.Label htmlFor="mail">email : </Form.Label>

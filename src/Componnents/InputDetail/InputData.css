@@ -1,0 +1,57 @@
+.bg{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 80vw;
+
+}
+
+.bg img{
+    width: 95vw;
+    height: 100vh;
+
+}
+.Data .container{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50% ,-10%);
+    padding: 7%;
+}
+.REVTitle{
+position: absolute;
+right:60%;
+bottom:  80%;
+transform: translate(-50% , -50%);
+}
+
+
+@media screen and (max-width:1000px) {
+    h4{
+        background-color: rgba(26, 113, 163, .7) ;
+        padding: 4px;
+       border-radius: 7px;
+       text-align: center;
+       width: 100%;
+    }
+    .bg img{
+        display: none;
+    }
+    
+    .Doctor,
+    .patiant{
+        width: 100% !important;
+    }
+    .Data .container{
+        position: absolute;
+        left: 50%;
+        bottom: 70%;
+        transform: translate(-50% ,-50%);
+    }
+    .REVTitle{
+        position: absolute;
+        right: 20%;
+        bottom:  60%;
+        transform: translate(-50% , -50%);
+        } 
+}

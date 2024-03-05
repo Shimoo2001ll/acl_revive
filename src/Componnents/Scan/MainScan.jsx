@@ -17,7 +17,6 @@ const MainScan = (props) => {
     <img src={upload} alt=""  width={100} height={100} />
     </div>
     <div className='p-4 m-4 fw-bold  fs-4 '>
-
     <p className='upload'>Upload Photo  <span className='text-muted'> or just drag and drop</span></p>
     <p className='text-dark text-capitalize '>{props.dir}</p>
     </div>
