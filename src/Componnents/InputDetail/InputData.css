@@ -17,8 +17,8 @@
 .Data .container{
     position: absolute;
     left: 50%;
-    top: 20%;
-    transform: translate(-50% ,-10%);
+    bottom: 10%;
+    transform: translate(-50% ,-0%);
     padding: 7%;
 }
 .REVTitle{
