@@ -27,7 +27,7 @@ transform: translate(-50% , -50%);
 
 
 @media screen and (max-width:1000px) {
-    h4{
+ .Data h4{
         background-color: rgba(26, 113, 163, .7) ;
         padding: 4px;
        border-radius: 7px;
