@@ -4,6 +4,7 @@ import  BUtton  from '../Button/Buutton'
 // import TitleServ from '../TitleServ/Title'
 import './InputData.css'
 import { FaGoogleDrive } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 
 const InputsData = (props) => {
@@ -16,8 +17,10 @@ const InputsData = (props) => {
         <h2>{props.title}</h2>
         </div>
             <h4>Doctor's Card</h4>
-<InputP type="text" placeholder="Name" />
-<InputP type="email" placeholder="Email" />
+            <Link to="/add" className=' text-decoration-none '>
+<InputP type="text" placeholder="Name"  />
+            </Link>
+<InputP type="email" placeholder="Email"  />
 <InputP type="number" placeholder="Phone" />
         </div>
         <div className='patiant mt-5 me-5 '>

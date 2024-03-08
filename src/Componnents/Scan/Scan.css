@@ -1,5 +1,5 @@
 :root {
-    --main-transition: all .5s linear;
+    --main-transition: all .1s ease;
     --main-color: rgba(7, 104, 159, 1);
  }
 
@@ -17,10 +17,19 @@
     margin: 5px 10px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.list .num:focus{
+    border: 1px solid var(--main-color);
+   border-radius: 50%;
+   color: var(--main-color);
+   font-weight: 700;
+   font-size: 18px;
+   
 }
 .list .num:hover{
-    cursor: pointer;
-    border: 1px solid var(--main-color);
+    border: 3px solid var(--main-color);
    border-radius: 50%;
    color: var(--main-color);
    font-weight: 700;
@@ -71,12 +80,18 @@ label:hover{
 }
 
 @media screen and (max-width:900px) {
+    .Slice{
+margin: 0 20px;
+border-right: none;
+padding: 0;
+    }
     
     .mri{
+
         display: flex;
         justify-content: center;
         align-items: center;
-       margin: 0 10px;
+       margin: 0 auto;
     }
     .mri img{
         width: 100%;
