@@ -13,7 +13,7 @@ const InputsData = (props) => {
           <div className='container'>  
         <div className=' d-flex flex-wrap justify-content-evenly    align-items-center  '>
         <div className='Doctor m-2 me-5'>
-        <div className='REVTitle '>
+        <div className='REVTitle w-100  '>
         <h2>{props.title}</h2>
         </div>
             <h4>Doctor's Card</h4>

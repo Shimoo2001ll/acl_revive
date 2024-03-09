@@ -13,7 +13,8 @@
 .mHome {
     width: 100%;
     height: 99vh;
-    box-shadow: inset 100px 10px 1000px 170px var(--main-color) , 10px 10px 10px 100px var(--main-color);
+    box-shadow: 10px 10px 10px 100px var(--main-color);
+background-image:linear-gradient(var(--main-color), white) ;
 }
 
 .intro {
@@ -32,24 +33,22 @@
   
 }
 
-.introtitle .btn {
-    background-color: var(--main-btn-color);
-    transition: var(--main-transition);
-    margin: 10% 0;
-    color: var(--main-color);
-    font-weight: 600;
+.introtitle  {
+    width: 50%;
 }
 
-.introtitle .btn:hover {
-    border: 1px solid var(--main-btn-color);
-    color: var(--main-colorr) !important;
-    letter-spacing: 1.9px;
-    font-weight: 600;
-    box-shadow: 2px 2px 4px 2px var(--main-btn-color);
-}
 
 .imgIntro img {
     width: 50%;
     height: 50%;
     border-radius: 10px !important;
+}
+@media screen and (max-width:900px) {
+    .mHome {
+ font-size: 18px;
+
+    }
+    .introtitle  {
+        width: 70%;
+    }
 }
