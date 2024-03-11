@@ -44,13 +44,13 @@ const router = createBrowserRouter([
     element: <Newpass />,
   },
   {
+    path : "HomeRid",
+    element: <HomeRid />,
+  },
+  {
     path: "/",
     element: <LayOut />,
     children: [
-      {
-        path : "HomeRid",
-        element: <HomeRid />,
-      },
       {
         path: "Scan",
         element: <Scan />,

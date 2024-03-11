@@ -2,11 +2,13 @@ import React from 'react';
 import './HomeRid.css';
 import acl from '../../asset/Acl Revive.svg';
 import aclLegknee from '../../asset/Leg with knee pain.jpg';
+import Nav from "../MainNav/NavBarM"
 
 
 const HomeRid = () => {
   return (
     <div className='mHome '>
+        <Nav/>
             <div className='intro   mt-1 '>
                 <div className='introtitle  rounded '>
                     <img src={acl} alt='acl-Head' className=' rounded ' />
