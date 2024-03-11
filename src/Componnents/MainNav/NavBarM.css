@@ -9,8 +9,8 @@
     --main-transition:all .6s linear;
   }
 
-nav{
-    background-color: var(--main-color) !important;
+.nav{
+  background-color: transparent;
 }
 .nav-link:hover{
 border-bottom:1px solid var(--main-btn-color) ;

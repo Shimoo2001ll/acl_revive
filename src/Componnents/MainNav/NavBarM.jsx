@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-transparent  ">
+    <Navbar expand="lg" >
       <Container>
         <Navbar.Brand href="#home"> <div className='col-6'>
           <Link to='/HomeRid' className=' text-decoration-none '>
