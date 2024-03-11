@@ -9,7 +9,26 @@
     --main-btn-color: rgba(250, 250, 250, 0.95);
     --main-transition: all .6s linear;
 }
+/* nav */
+.mHome .nnavv{
+    background-image: linear-gradient(128.57deg, #07689F -0.4%, #07689F -0.39%, rgba(48, 155, 216, 0.9) 27.14%, #45A1D5 44.42%, rgba(47, 136, 187, 0.955) 69.25%, #2690CD 75.19%, #07689F 103.27%),
+    linear-gradient(249.8deg, rgba(48, 152, 211, 0.2) 3.22%, rgba(19, 131, 194, 0.2) 86.09%);
+  
+  }
+.mHome .nav-link{
+transition: var(--main-transition);
+color: white !important;
 
+  }
+
+ .mHome .nav-link:hover{
+border-bottom:1px solid whitesmoke ;
+margin: 0 1px;
+letter-spacing: 1.5px;
+}
+
+
+/*  main page */
 .mHome {
     width: 100%;
     height: 99vh;

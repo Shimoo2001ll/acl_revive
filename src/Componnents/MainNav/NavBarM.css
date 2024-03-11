@@ -8,6 +8,7 @@
     --main-btn-color:rgba(250, 250, 250, 0.95);
     --main-transition:all .6s linear;
   }
+
   .nav-link{
 transition: var(--main-transition);
   }

@@ -16,8 +16,9 @@ function Login() {
         if(email==="" || pass ===""){
     e.preventDefault();
     setErorr(<p className=' alert  alert-danger  text-capitalize '> Please fill in all the fielde </p>)
-    return;
+   
 }
+ 
     }
     return (
         <div className=' log  w-75 mt-2 pt-5 '>
@@ -34,7 +35,7 @@ function Login() {
                         </div>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" class="form-label fw-bold ">Password:</label>
+                        <label htmlFor="exampleInputPassword1" className="form-label fw-bold ">Password:</label>
                         <div className='inp border border-muted row p-2 rounded'>
                             <FaLock className='awenvelop col-2 p-0 m-0 '/>
                             <input type="password" placeholder='****************' className=' col-10 m-0 p-0' value={pass} onChange={e=> setPass(e.target.value)} />
