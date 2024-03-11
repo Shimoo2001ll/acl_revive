@@ -19,15 +19,6 @@
     border: none;
     outline: none;
  }
- .btn {
-    box-shadow: inset 10px 10px 35px 10px var(--main-color);
-    color: white !important;
- }
- 
- .btn:hover {
-    box-shadow: inset 20px 20px 40px 20px var(--main-color);
-    color: white !important;
- }
  
  /*  main styling */
  .log {
@@ -90,7 +81,7 @@
     color: var(--main-color);
  }
  
- .signup {
+ .forgetPass {
     color: #888888;
     font-size: 18px;
     text-transform: capitalize;
@@ -98,7 +89,7 @@
     transition: var(--main-transition);
  }
  
- .signup:hover {
+ .forgetPass:hover {
     color: var(--main-color);
     font-weight: 600;
     border-bottom: 1px solid var(--main-color);

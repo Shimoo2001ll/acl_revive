@@ -2,10 +2,13 @@
     box-shadow: inset 10px 10px 35px 10px var(--main-color);
     color: white !important;
     padding: 5px 20px !important;
-    
+    transition: all .5s linear ;
+    width: 80%;
 
  }
 .btn:hover {
-    box-shadow: inset 20px 20px 40px 20px rgba(255, 255, 255, 1);
-    color: black !important;
+    box-shadow: inset 15px 15px 40px 15px var(--main-color) !important;
+    color: white !important;
+   font-weight: 600;
+   letter-spacing: 1.4px;
  }

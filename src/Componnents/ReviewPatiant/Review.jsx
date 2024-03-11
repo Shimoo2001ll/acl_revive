@@ -1,11 +1,11 @@
 import React from 'react'
-import BgServ from '../BGseve/BgServ';
+// import BgServ from '../BGseve/BgServ';
 import InputsData from '../InputDetail/InputsData';
 
 const Review = () => {
   return (
     <div >
-      <BgServ/>
+      {/* <BgServ/> */}
   <InputsData  title="Review Patiant"/>
     </div>
   )

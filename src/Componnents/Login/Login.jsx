@@ -47,8 +47,8 @@ function Login() {
                     </div>
                 </form>
             </div>
-            <div className='forgetPass mt-5'>
-                    <Link to="/forget" className='signup text-muted fs-6 '> Forget Password?</Link>
+            <div className=' mt-5'>
+                    <Link to="/forget" className='forgetPass text-muted fs-6 '> Forget Password?</Link>
             </div>
             <div className='OR text-center m-3 p-3'>
                 <div className='otherLink text-muted text-capitalize p-2 m-2'>or</div>

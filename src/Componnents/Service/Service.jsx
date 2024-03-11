@@ -1,12 +1,12 @@
 import React from 'react'
-import BgServ from '../BGseve/BgServ';
+// import BgServ from '../BGseve/BgServ';
 import InputsData from '../InputDetail/InputsData';
 
 
 const Service = () => {
   return (
     <div>
-     <BgServ/>
+     {/* <BgServ/> */}
       <InputsData title="Add new Patiant"/>
     </div>
   )
