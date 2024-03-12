@@ -16,18 +16,17 @@ import Navbar from 'react-bootstrap/Navbar';
 const HomeRid = () => {
   return (
     <> 
-   
-    <div className='mHome '>
+ <div className='mHome '>
   <Navbar expand="lg" className='nnavv ' >
       <Container>
         <Navbar.Brand href="#home"> <div className='col-6'>
           <Link to='/HomeRid' className=' text-decoration-none '>
-          
           <img src={Logo} alt="" />
           </Link>
-        </div></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        </div>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"  />
+        <Navbar.Collapse id="basic-navbar-nav " >
           <Nav className="ms-auto">
             <Link className='nav-link text-dark' to="/HomeRid">Home</Link>
             <Link className='nav-link text-dark' to="/scan">Scan</Link>

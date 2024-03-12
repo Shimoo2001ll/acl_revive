@@ -1,7 +1,11 @@
 
 import React from 'react'
 import upload from '../../asset/UploadPhoto.svg'
+import swal from 'sweetalert' 
 const MainScan = (props) => {
+  const scanSuccess =()=>{
+    return  swal("scan success ")
+  }
   return (
     <div>
   <div className='Uplod'>
@@ -24,7 +28,7 @@ const MainScan = (props) => {
 </div>
 <div className=' d-flex justify-content-end  '>
 
-<button className='btn  w-25 m-2 text-center'>Scan</button>
+<button onClick={scanSuccess} className='btn  w-25 m-2 text-center'>Scan</button>
 </div>
     </div>
     </div>
