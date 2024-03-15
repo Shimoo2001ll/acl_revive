@@ -1,8 +1,8 @@
 import React ,{useState}from 'react'
-import profile from '../../../asset/prof.svg'
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import swal from 'sweetalert2';
+import Enav from '../EditNav/Enav'
 
 const ADDmail = () => {
   const [mail ,setMail] = useState("")
@@ -21,16 +21,7 @@ swal.fire({
   }
   return (
     <div>
-          <nav className="navbar bg-transparent">
-        <div className="container-fluid ">
-          <div className='text-center  w-75'>
-          <h4  >Email</h4>
-          </div>
-          <div className="d-flex" >
-            <img src={profile} alt="" />
-          </div>
-        </div>
-      </nav>
+     <Enav/>
       <div className='container  p-3 '>
 
       <div className='fw-bold fs-5 w-100  mb-4  mail '>

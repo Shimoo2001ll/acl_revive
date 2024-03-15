@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import profile from '../../../asset/prof.svg'
+import Enav from '../EditNav/Enav'
 import Form from 'react-bootstrap/Form';
 import swal from "sweetalert2";
 
@@ -29,17 +29,7 @@ confirmButtonText:"Ok ",
   }
   return (
     <div>
-      <nav className="navbar bg-transparent">
-        <div className="container-fluid ">
-          <div className='text-center ms-5 ps-lg-5 
-            w-75'>
-            <h4  >Password</h4>
-          </div>
-          <div className="d-flex" >
-            <img src={profile} alt="" />
-          </div>
-        </div>
-      </nav>
+     <Enav/>
       <div className='container  p-3 '>
 
 <div className='fw-bold fs-5 w-100  mb-4  mail '>
