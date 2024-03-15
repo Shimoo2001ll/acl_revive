@@ -1,14 +1,31 @@
 import React, { useState } from 'react'
 import profile from '../../../asset/prof.svg'
 import Form from 'react-bootstrap/Form';
-// import swal from "sweetalert2";
+// import swal from 'sweetalert';
+import swal from "sweetalert2";
 
 const EditPass = () => {
   const[pass,setPass] = useState('')
+  const[newpass,setNewPass] = useState('')
+  const[confirm,setConfirm] = useState('')
   const alert =(e)=>{
     e.preventDefault()
-if(pass ===""){
+if(pass ==="" || newpass ==="" ||confirm===""){
+ swal.fire({
+title:"Please Fill The Inputs",
+icon:"error",
+timer:3000,
+confirmButtonText:"Ok ",
 
+ })
+}else{
+  swal.fire({
+    title:"Password Changed Successfully",
+    icon:"success",
+    timer:3000,
+    confirmButtonText:"Submit ",
+    
+     })
 }
   }
   return (
@@ -45,6 +62,8 @@ if(pass ===""){
         id="new"
         className='mt-3 ps-3  '
         placeholder='**************************************'
+        value={newpass}
+        onChange={e=>setNewPass(e.target.value)}
       />
      
   </div>
@@ -55,6 +74,8 @@ if(pass ===""){
         id="confirm"
         className='mt-3 ps-3  '
         placeholder='**************************************'
+        value={confirm}
+        onChange={e=>setConfirm(e.target.value)}
       />
      
   </div>
