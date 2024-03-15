@@ -24,7 +24,7 @@ const EditEmail = () => {
 <div>
   <Link to="/ADDmail">
  
-    <button className='addMail'>+</button>
+    <button className='addMail me-5 pe-5 fw-bold' title="Add Email">+</button>
   </Link>
 </div>
         </div>

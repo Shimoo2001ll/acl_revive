@@ -1,7 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import swal from 'sweetalert2'
 
 const VaryEmail = () => {
+  const varify=()=>{
+    swal.fire({
+      title:"Email changed Successfully",
+      icon:"success"
+    })
+  }
   return (
     <div className='verify'>
         <div  className='via container m-2 p-5 text-center'>
@@ -24,7 +31,7 @@ const VaryEmail = () => {
        </div>
          </div>
        
-           <Link className='btn w-75 rounded  rounded-3  ' >Varify</Link>
+           <Link onClick={varify} className='btn w-75 rounded  rounded-3  ' >Varify</Link>
         </div>
     </div>
 

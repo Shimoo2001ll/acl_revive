@@ -1,9 +1,24 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import profile from '../../../asset/prof.svg'
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert2';
 
 const ADDmail = () => {
+  const [mail ,setMail] = useState("")
+  const check=(e)=>{
+    if(mail===""){
+  e.preventDefault()
+swal.fire({
+  title:`Fill The Input `,
+  icon:"error",
+})
+}else{
+  return ( <Link to="/varyEmail" className=' text-decoration-none  text-light '  >
+  Verify
+  </Link>)
+}
+  }
   return (
     <div>
           <nav className="navbar bg-transparent">
@@ -25,14 +40,18 @@ const ADDmail = () => {
               id="mail"
               className='mt-3 ps-3  '
               placeholder='Mehrabbozorgi.business@gmail.com'
+              value={mail}
+              onChange={e=>setMail(e.target.value)}
             />
            
         </div>
         <div className='text-center  w-100'> 
 
-        <Link to="/varyEmail" className='btn w-100 '>
+          
+        <Link to="/varyEmail" onClick={check} className='btn w-100 text-decoration-none  text-light   '  >
         Verify
         </Link>
+     
         </div>
       </div>
     </div>

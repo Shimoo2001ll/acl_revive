@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import profile from '../../../asset/prof.svg'
 import Form from 'react-bootstrap/Form';
-// import swal from 'sweetalert';
 import swal from "sweetalert2";
 
 const EditPass = () => {
