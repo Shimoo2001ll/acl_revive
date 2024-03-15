@@ -1,6 +1,13 @@
 import React from 'react'
 
 const InputP = (props) => {
+//   const [text , setText] =useState()
+//   const checkValue= (e)=>{
+//     if(text ==="")
+//     e.preventDefault()
+//     console.log(e)
+
+//   }
  
   return (
     <>
@@ -12,7 +19,8 @@ const InputP = (props) => {
             min={props.min}
             max={props.max}
             maxLength={props.maxLength}
-           
+           onChange={props.onChange}
+           value={props.value}
           />
         </div>
     </>

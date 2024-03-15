@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import './Profile.css';
 import profile from '../../asset/changePhoto.svg';
 import Form from 'react-bootstrap/Form';
+import edit from '../../asset/edit.svg';
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
   const photoRef = useRef(null)
@@ -55,17 +57,28 @@ const Profile = () => {
               maxLength="14"
             />
         </div>
-        <div className='fw-bold mt-4'><Form.Label htmlFor="mail">email : </Form.Label>
+        <div className='fw-bold mt-4 mail '><Form.Label htmlFor="mail">email : </Form.Label>
             <Form.Control
               type="email"
               id="mail"
             />
+            <Link to="/EditEmail" >
+             <div className=' edit'>
+              <img src={edit} alt="edit" title='Edite Mail' />
+            </div>
+            </Link>
         </div>
-        <div className='fw-bold mt-4'><Form.Label htmlFor="pass">password : </Form.Label>
+        <div className='fw-bold mt-4 mail'><Form.Label htmlFor="pass">password : </Form.Label>
             <Form.Control
               type="pass"
               id="pass"
             />
+            <Link to="/EditPass">
+            
+              <div className=' edit'>
+              <img src={edit} alt="edit" title=" Edit Password" />
+            </div>
+            </Link>
         </div>
         <div className='text-end m-3'>
           <button className=' cancle-btn '>Cancle</button>

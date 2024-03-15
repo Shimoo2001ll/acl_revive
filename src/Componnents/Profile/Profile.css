@@ -63,3 +63,12 @@ border-radius: 50%;
     color: black !important;
     border:  1px solid black;
 }
+.mail {
+position: relative;
+}
+.mail .edit{
+    position: absolute;
+    left: 90%;
+    bottom:12%;
+    cursor: pointer;
+}

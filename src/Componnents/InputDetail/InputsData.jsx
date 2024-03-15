@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import InputP from '../InputP/InputP'
 import BUtton from '../Button/Buutton'
 // import TitleServ from '../TitleServ/Title'
@@ -8,6 +8,17 @@ import { Link } from 'react-router-dom'
 
 
 const InputsData = (props) => {
+  const [email , setEmail] =useState()
+  const [number , setNumber] =useState()
+  const [alert , setAlert] = useState()
+  const checkValue = (e)=>{
+    if(email ==="" || number==="" )
+      e.preventDefault()
+      setAlert(<div className='alert alert-danger w-100 '> you should fill all the input field  </div>)
+    
+
+  }
+
   return (
     <div className=' d-flex  justify-content-evenly  align-items-center '>
       <div className='Data  p-1'>
@@ -21,15 +32,15 @@ const InputsData = (props) => {
               <Link to="/add" className=' text-decoration-none '>
                 <InputP type="text" placeholder="Name" />
               </Link>
-              <InputP type="email" placeholder="Email" />
-              <InputP type="number" placeholder="Phone" />
+              <InputP type="email" placeholder="Email"  />
+              <InputP type="number" placeholder="Phone"  />
             </div>
           </div>
           <div className='patiant  '>
             <h4 className='text-center mb-3'>Patient's Card</h4>
             <InputP type="text" placeholder="Name" />
-            <InputP type="email" placeholder="Email" />
-            <InputP type="number" placeholder="Phone" min="0" maxLength="14" />
+            <InputP type="email" placeholder="Email" value={email} onChange={e=> setEmail(e.target.value)} />
+            <InputP type="number" placeholder="Phone" min="0" maxLength="14" value={number} onChange={e=> setNumber(e.target.value)} />
             <InputP type="number" placeholder="Age" min="0" maxLength="2" />
             <InputP type="text" placeholder="Result of scan" />
             <div className='w-100  mb-3  '>
@@ -45,9 +56,12 @@ const InputsData = (props) => {
               </label>
             </div>
             <div className='w-100 d-flex  justify-content-center    align-items-center'>
-              <BUtton name='Save' />
-              <BUtton name='Cancle' />
+              <BUtton  name='Save' onClick={checkValue} />
+              <BUtton name='Send' />
             </div>
+           
+               {alert && alert}
+          
           </div>
         </div>
 

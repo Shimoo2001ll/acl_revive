@@ -11,16 +11,20 @@ import{FaLock} from 'react-icons/fa'
 function Login() {
     const [email , setEmail ] = useState('')
     const [pass , setPass ] = useState('')
-    const [error , setErorr ] = useState('')
+    const [error , setErorr ] = useState(false)
     const checkInputs = (e)=>{
+
         if(email==="" || pass ===""){
-    e.preventDefault();
-    setErorr(<p className=' alert  alert-danger  text-capitalize '> Please fill in all the fielde </p>)
+          e.preventDefault();
+    setErorr(true)
+    setTimeout(() => {
+        setErorr(false)
+    }, 3000);
    
 }
- 
-    }
-    return (
+}
+
+  return (
         <div className=' log  w-75 mt-2 pt-5 '>
             <div className='m-5 text-center'>
                 <img src={Logo} alt="acl logo" title='Acl logo' width={100} height={100} />
@@ -42,11 +46,11 @@ function Login() {
                         </div>
                     </div>
                     <div>
-                        {error && error}
                         <Link to='/HomeRid' onClick={checkInputs}  className="btn  w-100 text-center text-capitalize "
                         > log in</Link>
                     </div>
                 </form>
+                        {error && <p className=' alert  alert-danger  text-capitalize '> Please fill in all the fielde </p>}
             </div>
             <div className=' mt-5'>
                     <Link to="/forget" className='forgetPass text-muted fs-6 '> Forget Password?</Link>

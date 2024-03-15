@@ -21,6 +21,10 @@ import  Service  from './Componnents/Service/Service';
 import  Patiant  from './Componnents/Patiant/Patiant';
 import Review from './Componnents/ReviewPatiant/Review';
 import Add from './Componnents/AddConnection/Add';
+import EditEmail from './Componnents/Edit/EditEmail/EditEmail';
+import ADDmail from './Componnents/Edit/AddMail/ADDmail';
+import VaryEmail from './Componnents/Edit/AddMail/VaryEmail';
+import EditPass from './Componnents/Edit/EditPass/EditPass';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +50,21 @@ const router = createBrowserRouter([
   {
     path : "HomeRid",
     element: <HomeRid />,
+  },
+  {
+    path : "EditEmail",
+    element: <EditEmail />,
+  },{
+    path:"ADDmail",
+    element:<ADDmail/>,
+  },
+ {
+    path:"VaryEmail",
+    element:<VaryEmail/>,
+  },
+ {
+    path:"EditPass",
+    element:<EditPass/>,
   },
   {
     path: "/",
