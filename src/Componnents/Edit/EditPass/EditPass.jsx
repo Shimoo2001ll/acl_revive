@@ -7,7 +7,7 @@ const EditPass = () => {
   const[pass,setPass] = useState('')
   const[newpass,setNewPass] = useState('')
   const[confirm,setConfirm] = useState('')
-  // const[passCond,setpassCond] = useState(false)
+ 
 
   const alert =(e)=>{
     e.preventDefault()
@@ -98,7 +98,7 @@ function newPassChecker(){
      
   </div>
   <div>
-    {/* {passCond && setpassCond(<p className='alert alert-danger m-2'> password should be more than 8 character </p>)} */}
+
   </div>
 <div className='fw-bold fs-5 w-100  mb-4  mail '>
   <Form.Label htmlFor="confirm">Enter Confirm Password : </Form.Label>
