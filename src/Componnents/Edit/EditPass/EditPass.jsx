@@ -7,6 +7,7 @@ const EditPass = () => {
   const[pass,setPass] = useState('')
   const[newpass,setNewPass] = useState('')
   const[confirm,setConfirm] = useState('')
+  const[alertpass,setAlert] = useState(false)
  
 
   const alert =(e)=>{
@@ -17,10 +18,12 @@ title:"Please Fill The Inputs",
 icon:"error",
 timer:3000,
 confirmButtonText:"Ok ",
+confirmButtonColor: "rgba(7, 104, 159, .8)"
 
  })
 }
 newPassChecker()
+// passLength()
 
 }
 // check new pass lleghth and be duplicated with confirm
@@ -32,39 +35,39 @@ function newPassChecker(){
       icon:"success",
       timer:3000,
       confirmButtonText:"Submit ",
+      confirmButtonColor: "rgba(7, 104, 159, .8)"
       
        })
   }
   
   if( pass !=="" && newpass !=="" && confirm !=="" &&  newpass !== confirm ){
     swal.fire({
-      title:"New password not equal the confirm",
+      title:"Confirm should equal the New password ",
       icon:"error",
-      timer:2000,
-      confirmButtonText:"Ok",
-      
-       })
-  }
-  if(newpass !== confirm){
-    swal.fire({
-      title:"New password not equal the confirm",
-      icon:"error",
-      timer:2000,
+      timer:5000,
+      confirmButtonColor: "rgba(7, 104, 159, .8)",
       confirmButtonText:"Ok",
       
        })
   }
   if(pass !=="" && newpass !=="" && confirm !=="" && pass === newpass){
     swal.fire({
-      title:"Old Password must not equal the New Password",
+      title:"New Password must not equal the Old Password",
       icon:"error",
-      timer:2000,
+      timer:3000,
+      confirmButtonColor: "rgba(7, 104, 159, .8)",
       confirmButtonText:"Ok",
       
        })
   }
 
 }
+// const  passLength =()=>{
+// if(newpass.length < 8){
+// setAlert(true)
+
+// }
+// }
 
 
 
@@ -97,6 +100,7 @@ function newPassChecker(){
       />
      
   </div>
+  {alertpass && setAlert(<p className='alert alert-danger  m-2'>Pass length should be more than 8 characters</p>)}
   <div>
 
   </div>
