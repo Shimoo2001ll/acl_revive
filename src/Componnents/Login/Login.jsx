@@ -13,8 +13,7 @@ import 'react-toastify/dist/ReactToastify.css'
 function Login() {
     const [email, setEmail] = useState('')
     const [pass, setPass] = useState('')
-    // const [error, setErorr] = useState(false)
-    // const [alert, setAlert] = useState(false)
+
 
 
     const navigate = useNavigate()
@@ -34,11 +33,9 @@ function Login() {
         if (!emailRegex.test(email)) {
             toast.error('Please enter valid mail contain (@ , .com ) ')
             return;
-        } else {
-            // setAlert('')
-        }
+        } 
 
-        // Check if password length is at least 6 characters
+        // Check if password length is at least 8 characters
         if (pass.length < 8) {
             toast.error('Passward must be at least 8 characters long')
             return;

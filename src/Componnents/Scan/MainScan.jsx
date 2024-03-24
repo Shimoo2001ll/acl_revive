@@ -1,10 +1,15 @@
 
 import React from 'react'
 import upload from '../../asset/UploadPhoto.svg'
-import swal from 'sweetalert' 
+import swal from 'sweetalert2' 
 const MainScan = (props) => {
   const scanSuccess =()=>{
-    return  swal("scan success ")
+    return  swal.fire(
+      {
+     title:"Saved Successfully",
+      }
+      
+    )
   }
   return (
     <div>
@@ -15,7 +20,7 @@ const MainScan = (props) => {
 </h3>
   </div>
 <div className='  '>
-  <input type='file' id="file"/>
+  <input type='file' id="file" multiple />
   <label htmlFor="file" className='input_upload  w-100 '>
     <div className='m-3'>
     <img src={upload} alt=""  width={100} height={100} />

@@ -13,14 +13,16 @@ const File = (props) => {
                             </div>
                             </div>
                         <div className='w-100 d-flex justify-content-between  align-items-center '>
-                            <div>
+                            <div  onClick={props.onClick}>
                                 <p className='fw-bold'>{props.name}</p>
                                 <span >{props.mail}</span>
+
                             </div>
                             <div className=''>
                               {props.bttn}
                             </div>
                         </div>
+                       
                     </div>
                     </div>
                 </div>

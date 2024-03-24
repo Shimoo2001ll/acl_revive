@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Enav from '../EditNav/Enav'
 import Form from 'react-bootstrap/Form';
 import swal from "sweetalert2";
+import {   toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+import { Toaster } from 'react-hot-toast';
 
 const EditPass = () => {
   const[pass,setPass] = useState('')
@@ -60,14 +63,12 @@ function newPassChecker(){
       
        })
   }
-
+  if (newpass.length < 8) {
+    toast.error('Passward must be at least 8 characters long')
+    return;
 }
-// const  passLength =()=>{
-// if(newpass.length < 8){
-// setAlert(true)
+}
 
-// }
-// }
 
 
 
@@ -123,6 +124,7 @@ function newPassChecker(){
   </button>
   </div>
       </div>
+      <Toaster/>
     </div>
   )
 }

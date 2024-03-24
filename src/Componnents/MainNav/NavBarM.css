@@ -18,6 +18,9 @@ border-bottom:1px solid var(--main-color) ;
 margin: 0 1px;
 letter-spacing: 1.5px;
 }
+.nav-link:focus{
+border-bottom:1px solid var(--main-color) ;
+}
 .nav-link img{
   width: 80%;
   height: 70%;
